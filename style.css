@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    background-color:black;
+}
+
+.pelota {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: bounce 3s infinite; 
+    position: absolute;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        left: 0;
+        transform:scaleY(1)
+    }
+    30% {
+        top:200px;
+        left: 25%;
+        transform: scaleY(1.1) scaleX(0.95);
+    }
+    50% {
+        top:0;
+        left:50%;
+        transform: scaleY(1);
+    }
+    70% {
+        top:100px;
+        left:75%;
+        transform: scaleY(1.1) scaleX(0.95);
+    }
+    100%{
+        top:0;
+        left:100%;
+        transform: scaleY(1);
+    }
+}
